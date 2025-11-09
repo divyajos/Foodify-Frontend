@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Search, LogOut, User, ShoppingCart, Home } from "lucide-react";
+import { LogOut, User, ShoppingCart, Home } from "lucide-react";
 
 function Nav() {
   const [role, setRole] = useState(localStorage.getItem("role"));
@@ -152,15 +152,15 @@ function Nav() {
                   </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle text-white"
-                    href="#"
+                  {/* 🔧 Fixed accessibility issue: replaced <a href="#"> with <button> */}
+                  <button
+                    className="nav-link dropdown-toggle text-white btn btn-link"
                     id="navbarDropdown"
-                    role="button"
                     data-bs-toggle="dropdown"
+                    style={{ textDecoration: "none" }}
                   >
                     🍕 Manage Data
-                  </a>
+                  </button>
                   <ul className="dropdown-menu">
                     <li>
                       <Link className="dropdown-item" to="/addcategory">
