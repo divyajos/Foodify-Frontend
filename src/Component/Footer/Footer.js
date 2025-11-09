@@ -76,6 +76,9 @@ function Footer() {
       display: "block",
       marginBottom: "8px",
       transition: "all 0.3s ease",
+      cursor: "pointer",
+      background: "none",
+      border: "none",
     },
     contactText: {
       fontSize: "0.95rem",
@@ -103,31 +106,50 @@ function Footer() {
               style={styles.input}
               placeholder="Your Name"
               required
-              onFocus={(e) => (e.target.style.border = `1px solid ${colors.medium}`)}
-              onBlur={(e) => (e.target.style.border = "1px solid rgba(176,107,63,0.25)")}
+              onFocus={(e) =>
+                (e.target.style.border = `1px solid ${colors.medium}`)
+              }
+              onBlur={(e) =>
+                (e.target.style.border =
+                  "1px solid rgba(176,107,63,0.25)")
+              }
             />
             <input
               type="email"
               style={styles.input}
               placeholder="Your Email"
               required
-              onFocus={(e) => (e.target.style.border = `1px solid ${colors.medium}`)}
-              onBlur={(e) => (e.target.style.border = "1px solid rgba(176,107,63,0.25)")}
+              onFocus={(e) =>
+                (e.target.style.border = `1px solid ${colors.medium}`)
+              }
+              onBlur={(e) =>
+                (e.target.style.border =
+                  "1px solid rgba(176,107,63,0.25)")
+              }
             />
             <textarea
               rows="3"
               style={styles.textarea}
               placeholder="Your Message"
               required
-              onFocus={(e) => (e.target.style.border = `1px solid ${colors.medium}`)}
-              onBlur={(e) => (e.target.style.border = "1px solid rgba(176,107,63,0.25)")}
+              onFocus={(e) =>
+                (e.target.style.border = `1px solid ${colors.medium}`)
+              }
+              onBlur={(e) =>
+                (e.target.style.border =
+                  "1px solid rgba(176,107,63,0.25)")
+              }
             ></textarea>
             <input
               type="submit"
               value="Send"
               style={styles.button}
-              onMouseOver={(e) => (e.target.style.background = `linear-gradient(90deg, ${colors.dark}, ${colors.medium})`)}
-              onMouseOut={(e) => (e.target.style.background = `linear-gradient(90deg, ${colors.medium}, ${colors.dark})`)}
+              onMouseOver={(e) =>
+                (e.target.style.background = `linear-gradient(90deg, ${colors.dark}, ${colors.medium})`)
+              }
+              onMouseOut={(e) =>
+                (e.target.style.background = `linear-gradient(90deg, ${colors.medium}, ${colors.dark})`)
+              }
             />
           </form>
         </div>
@@ -165,7 +187,8 @@ function Footer() {
         <div style={styles.column}>
           <h5 style={styles.heading}>Our Services</h5>
           <a
-            href="#"
+            href="/"
+            aria-label="Fresh & Hygienic Food"
             style={styles.link}
             onMouseOver={(e) => (e.target.style.color = colors.dark)}
             onMouseOut={(e) => (e.target.style.color = colors.text)}
@@ -173,7 +196,8 @@ function Footer() {
             Fresh & Hygienic Food
           </a>
           <a
-            href="#"
+            href="/"
+            aria-label="Fast Home Delivery"
             style={styles.link}
             onMouseOver={(e) => (e.target.style.color = colors.dark)}
             onMouseOut={(e) => (e.target.style.color = colors.text)}
@@ -181,7 +205,8 @@ function Footer() {
             Fast Home Delivery
           </a>
           <a
-            href="#"
+            href="/"
+            aria-label="24/7 Support & Secure Payment"
             style={styles.link}
             onMouseOver={(e) => (e.target.style.color = colors.dark)}
             onMouseOut={(e) => (e.target.style.color = colors.text)}

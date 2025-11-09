@@ -57,6 +57,7 @@ function Header() {
       boxShadow: "0 2px 6px rgba(11,8,6,0.06)",
       transition: "all 0.3s ease",
       fontSize: "14px",
+      cursor: "pointer",
     },
     contact: {
       display: "flex",
@@ -108,13 +109,11 @@ function Header() {
     <>
       <style>
         {`
-        /* 🔴 small animation for live dot */
         @keyframes pulse {
           0% { box-shadow: 0 0 0 0 rgba(255,82,82,0.7); transform: scale(1); }
           70% { box-shadow: 0 0 0 8px rgba(255,82,82,0); transform: scale(1.08); }
           100% { box-shadow: 0 0 0 0 rgba(255,82,82,0); transform: scale(1); }
         }
-        /* 🟤 hover effect for icons */
         .social-icon:hover {
           transform: translateY(-5px) scale(1.05);
           color: white !important;
@@ -128,19 +127,54 @@ function Header() {
         <div style={styles.container}>
           {/* 🌐 Social Icons */}
           <div style={styles.social}>
-            <a href="#" className="social-icon" style={styles.socialIcon}>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              style={styles.socialIcon}
+              aria-label="Instagram"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="social-icon" style={styles.socialIcon}>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              style={styles.socialIcon}
+              aria-label="Facebook"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="social-icon" style={styles.socialIcon}>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              style={styles.socialIcon}
+              aria-label="LinkedIn"
+            >
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" className="social-icon" style={styles.socialIcon}>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              style={styles.socialIcon}
+              aria-label="GitHub"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="#" className="social-icon" style={styles.socialIcon}>
+            <a
+              href="https://wa.me/911234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              style={styles.socialIcon}
+              aria-label="WhatsApp"
+            >
               <i className="fab fa-whatsapp"></i>
             </a>
           </div>

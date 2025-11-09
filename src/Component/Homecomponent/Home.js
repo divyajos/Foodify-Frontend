@@ -56,10 +56,12 @@ function Home(){
             <div className="row gy-4">
               <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
                 <img src="./assets/img/about.jpg" className="img-fluid" alt="About" />
-                <a
-                  href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                  className="glightbox play-btn"
-                ></a>
+<a
+  href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+  className="glightbox play-btn"
+  aria-label="Play video"
+></a>
+
               </div>
               <div className="col-lg-6 content order-last order-lg-first">
   <div className="p-5 bg-white rounded-4 shadow-lg border-start border-4 border-primary">
