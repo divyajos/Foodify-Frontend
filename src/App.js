@@ -14,7 +14,7 @@ import Userhome from "./Component/Userhomecomponent/Userhome";
 import Logout from "./Component/Logoutcomponent/Logout";
 import Manageuser from "./Component/Manageusercomponent/Manageuser";
 import ChangePassword from "./Component/Changepasswordcomponent/Changepassword";
-import AddCategory from "./Component/AddCategory/AddCategory";
+
 import LiveFoodMenu from "./Component/Livemenu/Livemenu";
 import Todaybestoffer from "./Component/Todaybestoffer.js/Todaybestoffer";
 
@@ -46,7 +46,7 @@ function App() {
 <Route path="logout" element={<Logout/>}></Route>
 <Route path="manageuser" element={<Manageuser/ >}></Route>
 <Route path="changepassword" element={<ChangePassword />}></Route>
-<Route path="addcategory" element={<AddCategory />}></Route>
+
 <Route path="livemenu" element={<LiveFoodMenu />}></Route>
 <Route path="todaybestoffer" element={<Todaybestoffer />}></Route>
 
